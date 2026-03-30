@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stampify Legal Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #446065;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --accent: #64748b;
+            --card: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f172a;
+                --text: #f1f5f9;
+                --accent: #94a3b8;
+                --card: #1e293b;
+                --border: #334155;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Newsreader', serif;
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .links-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .legal-link {
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .legal-link:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .legal-link-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .legal-link-desc {
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 60px;
+            color: var(--accent);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Stampify</div>
+        <h1>Legal Documentation</h1>
+
+        <div class="links-grid">
+            <a href="privacy.html" class="legal-link">
+                <span class="legal-link-title">Privacy Policy</span>
+                <span class="legal-link-desc">Learn about how we handle and protect your personal information.</span>
+            </a>
+            <a href="terms.html" class="legal-link">
+                <span class="legal-link-title">Terms of Use</span>
+                <span class="legal-link-desc">Review the rules and guidelines for using the Stampify app.</span>
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 Rasim Eren. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
